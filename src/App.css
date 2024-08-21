@@ -1,0 +1,11 @@
+li {
+  list-style-type: none;
+}
+
+.ul__header {
+  display: flex;
+  justify-content: space-between;
+  background-color: bisque;
+  padding: 15px 20px;
+}
+

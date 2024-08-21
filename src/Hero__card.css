@@ -1,0 +1,10 @@
+.hero__group_btns {
+    display: flex;
+    justify-content: space-around;
+ 
+}
+
+.hero__content {
+    width: 60%;
+    margin: 0 auto;
+}

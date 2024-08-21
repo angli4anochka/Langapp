@@ -1,0 +1,56 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.hero__card_title {
+    padding: 15px 15px;
+  }
+  
+  .hero__card__el {
+    width: 30%;
+    background-color: beige;
+    border-radius: 15px;
+    
+  }
+  
+  .hero__card_picture {
+    background: url(./img/deerRace.png);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+  }
+
+  .hero__card_picture2 {
+    background: url(./img/pinkPeopleMain.png);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+  }
+
+  .hero__card_picture3 {
+    background: url(./img/eagleMain.png);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+  }
+  
+  .hero__card_list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .hero__description {
+    
+    padding: 20px 15px;
+  }
+
