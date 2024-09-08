@@ -8,3 +8,37 @@
     width: 60%;
     margin: 0 auto;
 }
+
+.card__container {
+    position: relative;
+   
+}
+
+.card__data {
+    width: 335px;
+    background-color: #fff;
+    padding: 0.5rem 2rem;
+    box-shadow:  0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    color:  gray;
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0;
+    right: 0;
+   
+    
+    
+    /*opacity: 0; */
+    margin-inline: auto;
+    transition: opacity 1s 1s;
+  }
+
+  .card__data h3 {
+    color: black;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
+  
+
+ 

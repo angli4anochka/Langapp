@@ -1,5 +1,5 @@
+
 .storyItem_wrapper {
-  display: flex;
   align-items: center;
   height: 100vh;
   max-height: 100dvh;
@@ -54,7 +54,6 @@
 
 .answer_container {
   display: flex;
-  flex-direction: column;
   width: 300px;
   gap: 1rem;
   margin-right: 2rem;
@@ -74,3 +73,16 @@
 .noVisible {
   opacity: 0;
 }
+
+.btn {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  gap: 30px; 
+  flex-wrap: wrap; 
+  padding: 0; 
+  border: none; 
+  background: none; 
+  cursor: pointer; 
+}
+

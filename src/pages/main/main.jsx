@@ -9,8 +9,10 @@ export default function Main() {
 
   return (
     <>
+    <div className="storyItem_wrapper">
       <Header />
       <CardList storiesData={storiesData} />
+      </div>
     </>
   );
 }

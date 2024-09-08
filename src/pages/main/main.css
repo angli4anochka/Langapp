@@ -1,3 +1,13 @@
+img {
+  width: 400px;
+  height: 300px;
+}
+
+a {
+text-decoration: none;
+color: #fff;
+}
+
 li {
   list-style-type: none;
 }
@@ -5,7 +15,89 @@ li {
 .ul__header {
   display: flex;
   justify-content: space-between;
-  background-color: bisque;
   padding: 15px 20px;
 }
 
+.storyItem_wrapper {
+  height: 100vh;
+  max-height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background: url("../../img/pictures/mainBackground.png");
+  background-repeat: no-repeat;
+}
+
+
+.center {
+  margin-bottom: 300px;
+}
+
+.mycloud, 
+.mycloud2,
+.mycloud3 {
+  position: relative;
+  animation: move 6s  ease infinite;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  margin-top: -30px;
+  margin-left: -30px;
+  background: #fff;
+  height: 120px;
+  width: 100px;
+  box-shadow: #fff 65px -15px 0 -5px,
+              #fff 25px -25px,
+              #fff 30px 10px,
+              #fff 60px 15px 0 -10px,
+              #fff 85px 5px 0 -5px;
+
+}
+
+.mycloud2 {
+  top: 15%;
+  left: 41%;
+  animation-duration: 8s;
+}
+
+.mycloud3 {
+  top: 9%;
+  left: 81%;
+  animation-duration: 8s;
+}
+
+
+.mycloud__text {
+  font-size: 40px;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  color: #6161a9;
+  z-index: 1; 
+}
+
+.mycloud__text2 {
+  font-size: 30px;
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  color: #6161a9;
+  z-index: 1; 
+}
+
+
+.mycloud__text3 {
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  color: #6161a9;
+  z-index: 1; 
+}
+
+@keyframes  move {
+ 50% {
+  transform: translateX(-30px);
+ }
+}
