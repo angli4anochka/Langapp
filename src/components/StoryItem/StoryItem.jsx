@@ -28,8 +28,6 @@ function StoryItem() {
     >
       <div className={s.main_story_text_wrapper}>
         <h1 className={s.title}>{story.storyName}</h1>
-
-        {/* Corrected button wrapper */}
         <div className={s.button_wrapper}>
           {story.buttons.map((item, index) => (
             <button key={index} className={s.btn}>

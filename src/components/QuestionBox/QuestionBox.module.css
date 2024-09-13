@@ -1,8 +1,9 @@
-.question_wrapper{
-
+.quastion_container {
+width: 500px;
 }
 
-.question_picture{
-  width: 190px;
+.question_picture {
+  width: 90px;
+  height: 90px;
   cursor: move;
 }

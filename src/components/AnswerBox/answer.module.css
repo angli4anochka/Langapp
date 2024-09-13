@@ -1,20 +1,23 @@
 .answer_box {
   border: 1px solid gray;
   width: 190px;
-  height: 190px;
-  border-radius: 100%;
+  height: 90px;
+  border-radius: 12%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.answer__content {
+  display: flex;
+  justify-content: column;
+  flex-wrap: wrap;
 }
 
 .answer_item {
-  width: 100%;
-  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .correct_answer_block {

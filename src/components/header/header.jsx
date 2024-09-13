@@ -10,7 +10,7 @@ function Header() {
       <div className="center">
       <ul className="ul__header">
         <li className="mycloud">
-          <span className="mycloud__text">Сказки</span>
+          <span className="mycloud__text">Языки</span>
         </li>
         <li className="mycloud2">
         <Link to="/achievements" style={{ textDecoration: 'none', color: 'inherit' }}>
