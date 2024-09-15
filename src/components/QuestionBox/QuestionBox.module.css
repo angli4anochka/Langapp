@@ -1,9 +1,12 @@
-.quastion_container {
-width: 500px;
+.question_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .question_picture {
-  width: 90px;
-  height: 90px;
+  width: 200px;
+  height: 200px;
   cursor: move;
 }

@@ -2,12 +2,12 @@
 "use client";
 import React, {useState} from 'react';
 import s from './answer.module.css';
+import {playSound} from '../../utils/playSound';
 
-function AnswerBox({answerItem, pictures, imgBasePath}) {
+function AnswerBox({answerItem, pictures, imgBasePath, soundBasePath}) {
   const [associatedPictureItem, setAssociatedPictureItem] = useState(null);
   const [isCorrect, setIsCorrect] = useState(false);
   const [isWrongAnswer, setIsWrongAnswer] = useState(false);
-
 
   const handleDrop = (event) => {
     event.preventDefault();
@@ -30,14 +30,18 @@ function AnswerBox({answerItem, pictures, imgBasePath}) {
   };
 
   return (
-    <div className={[s.answer_box, isWrongAnswer ? s.wrongBg : ''].join(' ')}>
+    <div className={[
+      s.answer_box,
+      isWrongAnswer ? s.wrongBg : '',
+      isCorrect ? s.correctBg : ''
+    ].join(' ')}>
       <div
         onDrop={handleDrop}
         onDragOver={handleDragOver}
         className={s.answer_item}
       >
         {isCorrect ? (
-          <div className={s.correct_answer_block} >
+          <div>
             <img
               className={s.answer_image}
               draggable="false"
@@ -45,10 +49,11 @@ function AnswerBox({answerItem, pictures, imgBasePath}) {
               alt={associatedPictureItem.text} />
           </div>
         ) : (
-          <div className={s.default_answer_block}>{answerItem.text}</div>
+          <div className={s.default_answer_block}
+            onClick={() => playSound(soundBasePath + answerItem.soundSrc)}>
+            {answerItem.text}
+          </div>
         )}
-
-        {/* {isWrongAnswer && <p>Не верно. Попробуй еще раз!</p>} */}
       </div>
     </div>
   );

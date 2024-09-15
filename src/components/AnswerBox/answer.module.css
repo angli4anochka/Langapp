@@ -20,20 +20,29 @@
   display: flex;
 }
 
-.correct_answer_block {
-  background-color: #80ff8021;
-
-}
-
 .answer_image {
-
+  position: relative;
+  height: 80px;
+  width: 80px;
 }
 
 .default_answer_block {
+  height: 100px;
+  display: flex;
+  align-items: center;
   font-size: 36px;
   text-align: center;
 }
 
+.default_answer_block:hover {
+  cursor: pointer;
+  color: blueviolet;
+}
+
 .wrongBg {
   background-color: #ff8080a3;
+}
+
+.correctBg {
+  background-color: #80ff804f;
 }
